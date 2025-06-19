@@ -3,7 +3,7 @@ from dotenv import load_dotenv
 import os
 import streamlit as st
 
-#load_dotenv()
+load_dotenv()
 
 def responder_com_rag(pergunta, retriever):
     docs = retriever.get_relevant_documents(pergunta)
@@ -21,7 +21,7 @@ def responder_com_rag(pergunta, retriever):
     Resposta:
     """
 
-    api_key = st.secrets["openai"]["api_key"]  # os.getenv("OPENAI_API_KEY")
+    api_key = os.getenv("OPENAI_API_KEY") # st.secrets["openai"]["api_key"]
     client = OpenAI(api_key=api_key)
     resposta = client.chat.completions.create(
         model="gpt-4o-mini",
