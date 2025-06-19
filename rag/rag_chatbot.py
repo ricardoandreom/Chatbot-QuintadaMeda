@@ -1,9 +1,7 @@
 from openai import OpenAI
-from dotenv import load_dotenv
 import os
 import streamlit as st
-
-load_dotenv()
+from config import api_key
 
 def responder_com_rag(pergunta, retriever):
     docs = retriever.get_relevant_documents(pergunta)

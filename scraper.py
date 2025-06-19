@@ -4,12 +4,7 @@ import re
 from openai import OpenAI
 import os
 import streamlit as st
-
-from dotenv import load_dotenv
-# Load variables do .env
-load_dotenv()
-# api_key from secrets
-api_key = os.getenv("OPENAI_API_KEY") # st.secrets["openai"]["api_key"]
+from config import api_key
 
 client = OpenAI(api_key=api_key)
 
