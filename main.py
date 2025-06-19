@@ -2,9 +2,12 @@ import streamlit as st
 from rag.loader import load_documents_from_txt
 from rag.retriever import create_retriever
 from rag.rag_chatbot import responder_com_rag
+from config import *
 
 st.set_page_config(page_title="Chatbot Quinta da Meda", layout="centered")
 st.title("🤖 Chatbot - Quinta da Meda")
+
+st.write(api_key)
 
 # Inicializa chatbot
 @st.cache_resource
