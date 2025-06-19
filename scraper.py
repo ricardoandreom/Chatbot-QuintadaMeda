@@ -3,13 +3,16 @@ from bs4 import BeautifulSoup
 import re
 from openai import OpenAI
 import os
+import streamlit as st
 
 from dotenv import load_dotenv
 
-# Carrega variáveis do .env
-load_dotenv()
-# Define a chave da OpenAI a partir do .env
-client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
+# Load variables do .env
+# load_dotenv()
+
+# api_key from secrets
+api_key = st.secrets["openai"]["api_key"] # os.getenv("OPENAI_API_KEY")
+client = OpenAI(api_key=api_key)
 
 def limpar_linhas_irrelevantes(texto: str) -> str:
     # Frases/palavras exatas a remover
@@ -164,7 +167,6 @@ for output_file, urls in urls_website.items():
         conteudo = scrape_and_save_website(url)
         if conteudo:
             all_text.append(conteudo)
-    # Junta e grava
     os.makedirs(os.path.dirname(output_file), exist_ok=True)
     with open(output_file, "w", encoding="utf-8") as f:
         f.write("\n\n---\n\n".join(all_text))
@@ -178,7 +180,6 @@ for output_file, urls in url_booking.items():
         conteudo_final = remover_comentarios_clientes(conteudo)
         if conteudo_final:
             all_text.append(conteudo_final)
-    # Junta e grava
     os.makedirs(os.path.dirname(output_file), exist_ok=True)
     with open(output_file, "w", encoding="utf-8") as f:
         f.write("\n\n---\n\n".join(all_text))
