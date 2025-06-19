@@ -19,7 +19,7 @@ def responder_com_rag(pergunta, retriever):
     Resposta:
     """
 
-    api_key = os.getenv("OPENAI_API_KEY") # st.secrets["openai"]["api_key"]
+    #
     client = OpenAI(api_key=api_key)
     resposta = client.chat.completions.create(
         model="gpt-4o-mini",
