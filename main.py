@@ -15,16 +15,15 @@ def setup_chatbot():
 
 retriever = setup_chatbot()
 
-# Inicializa histórico de mensagens
+# Inicia histórico de mensagens
 if "messages" not in st.session_state:
     st.session_state.messages = []
 
-# Exibe histórico de chat
+# Mostra histórico de chat
 for msg in st.session_state.messages:
     with st.chat_message(msg["role"]):
         st.markdown(msg["content"])
 
-# Input do user
 pergunta = st.chat_input("Faça a sua pergunta sobre o alojamento:")
 
 if pergunta:
@@ -33,7 +32,7 @@ if pergunta:
     with st.chat_message("user"):
         st.markdown(pergunta)
 
-    # Obtém resposta do chatbot
+    # Resposta do chatbot
     resposta = responder_com_rag(pergunta, retriever)
 
     # Guarda e mostra resposta do chatbot
@@ -41,7 +40,7 @@ if pergunta:
     with st.chat_message("assistant"):
         st.markdown(resposta)
 
-# Botão para reset do histórico (opcional)
+# Botão para reset do histórico
 if st.button("🔁 Reset no chat"):
     st.session_state.messages = []
     st.experimental_rerun()
