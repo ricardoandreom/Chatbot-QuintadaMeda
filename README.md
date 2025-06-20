@@ -12,15 +12,17 @@ The chatbot uses **Retrieval-Augmented Generation (RAG)** powered by **OpenAI's 
 
 Chatbot_QuintadaMeda/
 
-├── .env # Environment variables (e.g. API key)
+    ├── .env # Environment variables (e.g. API key)
 
-├── .gitignore
+    ├── .gitignore
 
-├── main.py # Streamlit frontend
+    ├── main.py # Streamlit frontend
 
-├── scraper.py # Script to extract and save raw information
+    ├── scraper.py # Script to extract and save raw information
 
-├── requirements.txt
+    ├── requirements.txt
+
+    ├── config.py # urls and keys
 
     ├── rag/
 
@@ -30,17 +32,17 @@ Chatbot_QuintadaMeda/
 
         └── rag_chatbot.py # RAG logic to generate responses
 
-├── data/
+    ├── data/
 
-    ├── info_booking.txt
+        ├── info_booking.txt
 
-    ├── info_contact.txt
+        ├── info_contact.txt
 
-    ├── info_main_page.txt
+        ├── info_main_page.txt
 
-    ├── info_region.txt
+        ├── info_region.txt
 
-    └── info_rooms.txt
+        └── info_rooms.txt
 
 
 ---
@@ -65,7 +67,7 @@ pip install -r requirements.txt
 ```
 
 ### 3. Set the Environment Variables
-Create a .env file in the project root:
+Create a .env file in the project root and change apikey root inside the config.py
 
 ```bash
 OPENAI_API_KEY=your_openai_api_key_here
