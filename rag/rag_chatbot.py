@@ -1,6 +1,4 @@
 from openai import OpenAI
-import os
-import streamlit as st
 from config import api_key
 
 def responder_com_rag(pergunta, retriever):
