@@ -71,7 +71,7 @@ pip install -r requirements.txt
 ```
 
 ### 3. Set the Environment Variables
-Create a .env file in the project root and change apikey root inside the config.py
+Create a .env file in the project root and change the api key root inside the config.py
 
 ```bash
 OPENAI_API_KEY=your_openai_api_key_here
