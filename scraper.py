@@ -140,7 +140,7 @@ for output_file, urls in url_booking.items():
     for url in urls:
         print(f"🔍 A processar: {url}")
         content = scrape_and_save_booking(url)
-        final_content = remover_comentarios_clientes(final_content)
+        final_content = remover_comentarios_clientes(content)
         if final_content:
             all_text.append(final_content)
     os.makedirs(os.path.dirname(output_file), exist_ok=True)
