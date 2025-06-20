@@ -22,13 +22,13 @@ Chatbot_QuintadaMeda/
 
 ├── requirements.txt
 
-├── rag/
+    ├── rag/
 
-    ├── loader.py # Load data from local .txt files
+        ├── loader.py # Load data from local .txt files
+    
+        ├── retriever.py # Create vector store retriever
 
-    ├── retriever.py # Create vector store retriever
-
-    └── rag_chatbot.py # RAG logic to generate responses
+        └── rag_chatbot.py # RAG logic to generate responses
 
 ├── data/
 
