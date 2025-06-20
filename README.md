@@ -4,7 +4,7 @@ This project is an AI-powered chatbot designed for the local accommodation **Qui
 
 The chatbot uses **Retrieval-Augmented Generation (RAG)** powered by **OpenAI's GPT-4o** model and provides a friendly interface via **Streamlit**.
 
-**Official website:** [Quinta da Meda](https://www.quintadameda.com/pt)
+**Official website:** [Quinta da Meda](https://www.quintadameda.com/en) | Come and visit us 😊
 
 ---
 
