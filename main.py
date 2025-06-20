@@ -4,7 +4,7 @@ from rag.retriever import create_retriever
 from rag.rag_chatbot import responder_com_rag
 from config import *
 
-st.set_page_config(page_title="Chatbot Quinta da Meda", layout="wide")
+st.set_page_config(page_title="Chatbot Quinta da Meda", layout="wide", initial_sidebar_state="expanded")
 
 st.title("🤖 Assistant Chatbot - Quinta da Meda 🏡🌳")
 
