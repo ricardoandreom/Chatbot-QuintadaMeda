@@ -87,7 +87,7 @@ streamlit run main.py
 Open your browser and go to http://localhost:8501 to start chatting with the bot.
 
 ### 📚 How It Works
-- Web Scraping: scraper.py extracts information from the website and saves it into .txt files.
+- Web Scraping: scraper.py extracts information from the official and booking.com website and saves it into .txt files.
 
 - Knowledge Base: These .txt files are loaded and converted into embeddings.
 
