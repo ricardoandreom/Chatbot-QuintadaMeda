@@ -6,7 +6,7 @@ The chatbot uses **Retrieval-Augmented Generation (RAG)** powered by **OpenAI's 
 
 **Official website:** [Quinta da Meda](https://www.quintadameda.com/en)
 
-**[Chatbot URL](https://chatbot-quintadameda.streamlit.app/))**
+**[Chatbot URL](https://chatbot-quintadameda.streamlit.app/)**
 
 ## Come and visit us 😊
 
