@@ -14,39 +14,39 @@ The chatbot uses **Retrieval-Augmented Generation (RAG)** powered by **OpenAI's 
 
 ## 📦 Project Structure
 
-Chatbot_QuintadaMeda/
-
-    ├── .env # Environment variables (e.g. API key)
-
-    ├── .gitignore
-
-    ├── main.py # Streamlit frontend
-
-    ├── scraper.py # Script to extract and save raw information
-
-    ├── requirements.txt
-
-    ├── config.py # urls and keys
-
-    ├── rag/
-
-        ├── loader.py # Load data from local .txt files
+    ├── Chatbot_QuintadaMeda/
     
-        ├── retriever.py # Create vector store retriever
-
-        └── rag_chatbot.py # RAG logic to generate responses
-
-    ├── data/
-
-        ├── info_booking.txt
-
-        ├── info_contact.txt
-
-        ├── info_main_page.txt
-
-        ├── info_region.txt
-
-        └── info_rooms.txt
+        ├── .env # Environment variables (e.g. API key)
+    
+        ├── .gitignore
+    
+        ├── main.py # Streamlit frontend
+    
+        ├── scraper.py # Script to extract and save raw information
+    
+        ├── requirements.txt
+    
+        ├── config.py # urls and keys
+    
+        ├── rag/
+    
+            ├── loader.py # Load data from local .txt files
+        
+            ├── retriever.py # Create vector store retriever
+    
+            └── rag_chatbot.py # RAG logic to generate responses
+    
+        ├── data/
+    
+            ├── info_booking.txt
+    
+            ├── info_contact.txt
+    
+            ├── info_main_page.txt
+    
+            ├── info_region.txt
+    
+            └── info_rooms.txt
 
 
 ---
