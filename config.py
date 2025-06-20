@@ -3,6 +3,8 @@ import streamlit as st
 
 api_key = st.secrets["openai"]["api_key"]
 
+logo_url = "https://raw.githubusercontent.com/ricardoandreom/Data/main/LOGOTIPO-1-SEM_FUNDO.png"
+
 urls_website = {
     "data/info_main_page.txt": ["https://www.quintadameda.com/pt/"],
     "data/info_contact.txt": ["https://www.quintadameda.com/pt/contato"],

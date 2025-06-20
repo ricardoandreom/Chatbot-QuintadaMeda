@@ -22,23 +22,23 @@ Chatbot_QuintadaMeda/
 
 ├── rag/
 
-    │ ├── loader.py # Load data from local .txt files
+    ├── loader.py # Load data from local .txt files
 
-    │ ├── retriever.py # Create vector store retriever
+    ├── retriever.py # Create vector store retriever
 
-    │ └── rag_chatbot.py # RAG logic to generate responses
+    └── rag_chatbot.py # RAG logic to generate responses
 
 ├── data/
 
-    │ ├── info_booking.txt
+    ├── info_booking.txt
 
-    │ ├── info_contact.txt
+    ├── info_contact.txt
 
-    │ ├── info_main_page.txt
+    ├── info_main_page.txt
 
-    │ ├── info_region.txt
+    ├── info_region.txt
 
-    │ └── info_rooms.txt
+    └── info_rooms.txt
 
 
 ---
@@ -89,10 +89,3 @@ Open your browser and go to http://localhost:8501 to start chatting with the bot
 
 ### 🔐 Security
 Make sure not to commit your .env file. It is excluded by the .gitignore file.
-
-### 📄 License
-This project is for internal or demo use only. For commercial applications, please review OpenAI's use case policy.
-
-Como chegar ao alojamento
-As chaves estão num cofre para chaves no local.
-Na receção aos hóspedes, informamos que podem as guardar as chaves da casa num cofre para o efeito que se encontra no portão de entrada da propriedade, dando nessa altura o respetivo código do cofre.
